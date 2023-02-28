@@ -12,6 +12,10 @@ header {
   padding: 10px;
 }
 
+#logo {
+    font-size: 3rem;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -19,7 +23,9 @@ ul {
 li {
   margin: 10px;
   list-style: none;
-  font-size: 2rem;
+  font-size: .8rem;
+  cursor: pointer;
+
 }
 
 button {
@@ -32,6 +38,19 @@ button {
 
 main {
     background: url('./Assets/judah-guttmann-t69fIZXxrwQ-unsplash.jpg') no-repeat center center fixed;
-    height: 300vh;
+    height: auto;
 }
 
+#menuItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageContainer {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    background-color: green;
+}
