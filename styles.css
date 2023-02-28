@@ -1,35 +1,37 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
-    background-color: green;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 li {
-    margin: 10px;
-    list-style: none;
-    font-size: 2rem;
+  margin: 10px;
+  list-style: none;
+  font-size: 2rem;
 }
 
 button {
-    background: none;
-    border: none;
-    font-size: 3rem;
-    cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 
-
-
+main {
+    background: url('./Assets/judah-guttmann-t69fIZXxrwQ-unsplash.jpg') no-repeat center center fixed;
+    height: 300vh;
+}
 
