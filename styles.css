@@ -4,28 +4,30 @@
 }
 
 header {
-  background-color: green;
+  background-color: #3d413b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  color: #EDF1D6;
 }
 
 #logo {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 ul {
   display: flex;
   flex-direction: row;
 }
+
 li {
   margin: 10px;
   list-style: none;
-  font-size: .8rem;
+  font-size: 1.15rem;
   cursor: pointer;
-
+  font-family: "IBM Plex Serif", serif;
 }
 
 button {
@@ -33,24 +35,31 @@ button {
   border: none;
   font-size: 3rem;
   cursor: pointer;
+  color: #EDF1D6;
 }
+
 
 
 main {
-    background: url('./Assets/judah-guttmann-t69fIZXxrwQ-unsplash.jpg') no-repeat center center fixed;
-    height: auto;
+  background-color: #609966;
+  height: auto;
 }
 
 #menuItems {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .imageContainer {
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    background-color: green;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px;
 }
