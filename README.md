@@ -1,4 +1,4 @@
-//This is a text file.
+
 # Group 1: Point of Sale  
 
 Creators
