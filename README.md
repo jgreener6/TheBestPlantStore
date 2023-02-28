@@ -1,5 +1,5 @@
 
-# Group 1: Point of Sale  
+# Group 1: Point of Sale Project  
 
 Creators
  1. Grif
