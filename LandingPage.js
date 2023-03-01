@@ -12,7 +12,7 @@
 
     const containers = document.querySelectorAll(".imageContainer");
     const images = document.querySelectorAll(".product-image");
-    const info = document.querySelectorAll(".product-info");
+    const info = document.querySelectorAll(".info-container");
     function imageClick(e) {
 
         info.forEach(i => i.style.display = "none");
@@ -27,7 +27,7 @@
         container.style.height = "500px";
         container.style.backgroundColor = "#aaaaaa";
 
-        const pInfo = container.querySelector(".product-info");
+        const pInfo = container.querySelector(".info-container");
         pInfo.style.display = "block";
 
 
