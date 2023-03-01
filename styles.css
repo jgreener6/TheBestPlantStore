@@ -17,28 +17,28 @@ header {
   font-size: 3rem;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
-li {
-  margin: 10px;
-  list-style: none;
-  font-size: 1.15rem;
+.filterBtn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #3d413b;
+  color: #EDF1D6;
   cursor: pointer;
+  font-size: 18px;
   font-family: "IBM Plex Serif", serif;
 }
 
-button {
+.active {
+  border-bottom: 2px solid #EDF1D6;
+}
+
+.cartBtn {
   background: none;
   border: none;
   font-size: 3rem;
   cursor: pointer;
   color: #EDF1D6;
 }
-
-
 
 main {
   background-color: #609966;
@@ -62,4 +62,5 @@ main {
 .product-image {
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
