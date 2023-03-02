@@ -39,3 +39,4 @@
     images.forEach((i) => i.addEventListener("click", imageClick))
 
 }());
+

@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "IBM Plex Serif", serif;
+  }
+  
+  header {
+    background-color: #3d413b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #EDF1D6;
+  }
+  
+  #logo {
+    font-size: 3rem;
+  }
+
+  #TheCartGreyBox {
+    background-color: #5e625b96;
+    height: 50vh;
+  }
+
+  #CartSection {
+    display: flex;
+    justify-content: space-between;
+
+  }
