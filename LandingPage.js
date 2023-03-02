@@ -13,6 +13,8 @@
     const containers = document.querySelectorAll(".imageContainer");
     const images = document.querySelectorAll(".product-image");
     const info = document.querySelectorAll(".info-container");
+    const addCartBtns = document.querySelectorAll(".add-cart");
+    const cartBtn = document.getElementById("cart");
     function imageClick(e) {
 
         info.forEach(i => i.style.display = "none");
@@ -31,11 +33,20 @@
         pInfo.style.display = "block";
 
 
-
-
-
-
     }
+
+    
+        
+        for(const addCartBtn of addCartBtns) {
+            addCartBtn.addEventListener("click", (event) => {
+                
+            })
+        }
+       
+     
+     
+    
+    
     images.forEach((i) => i.addEventListener("click", imageClick))
 
 }());
