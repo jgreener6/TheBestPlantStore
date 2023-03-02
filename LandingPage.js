@@ -34,13 +34,20 @@
 
 
     }
-
     
+    const emptyCart = [];
         
         for(const addCartBtn of addCartBtns) {
             addCartBtn.addEventListener("click", (event) => {
-                
+                let productObject = {
+                    name: addCartBtn.dataset.name,
+                    category: addCartBtn.dataset.category,
+                    price: addCartBtn.dataset.price,
+                    id: addCartBtn.dataset.id,
+                }
+                emptyCart.push(productObject);
             })
+             
         }
        
      
