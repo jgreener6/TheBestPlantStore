@@ -16,10 +16,10 @@
 
     const newPrice = document.createElement("p")
     newPrice.innerText= product.price
-    nameDiv.append(newPrice)
+    priceDiv.append(newPrice)
 
     const newQty = document.createElement("p")
     newQty.innerText= product.category
-    nameDiv.append(newQty)
+    qtyDiv.append(newQty)
  });
  
