@@ -5,8 +5,12 @@
  const nameDiv = document.getElementById("nameDiv")
  const qtyDiv = document.getElementById("qtyDiv")
  const priceDiv = document.getElementById("priceDiv")
+ const subTotal = document.getElementById("subtotal")
+ const salesTax = document.getElementById("sales-tax")
+ const total = document.getElementById("total")
+ const cartPriceBox = document.getElementById("CartPrice")
 
-
+let subPrice = 0;
 
 
  storedEmptyCart.forEach(product => {
@@ -21,5 +25,23 @@
     const newQty = document.createElement("p")
     newQty.innerText= product.category
     qtyDiv.append(newQty)
+
+    let price = +product.price
+    
+   subPrice += price
  });
+
+ const taxMI = 0.06;
+ const tax = subPrice * taxMI;
+ /* var rounded = Math.round(tax * 10) / 10
+ var fixed = rounded.toFixed(1)
+ parseFloat(tax.toFixed(2))
+ */
+ const totalPrice = tax + subPrice;
+
+ 
+ subTotal.innerText = (`Subtotal: ${subPrice}`)
+ salesTax.innerText = (`Tax: ${tax}`)
+ total.innerText = (`Total: ${totalPrice}`)
+
  
