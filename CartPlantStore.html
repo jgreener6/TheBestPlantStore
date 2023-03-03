@@ -102,17 +102,25 @@
             </select>
             <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
             <label for="ccv">CCV: </label>
-            <input id="ccv" name="ccv" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
-              maxlength="3" placeholder="xxx">
+            <input id="ccv" name="ccv" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="3"
+              placeholder="xxx">
           </div>
-        </form>
+          <div id="card-pay-button">
+            <div class="btnContainer"></div>
+            <button id="card-submit">Confirm Payment</button>
+          </div>
       </div>
-      <div id="cash-section"></div>
+      </form>
+    </div>
+    <div id="cash-section">
+
+    </div>
     </div>
 
 
   </main>
 </body>
+
 <!--  <script src="./LandingPage.js"></script> -->
 <script src="./test.js"></script>
 
