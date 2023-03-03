@@ -65,6 +65,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 700;
 }
 
 #CartPrice {
@@ -84,3 +85,83 @@
   text-align: right;
 }
 
+.payment-box {
+  background-color: #3d413b7e;
+    height: auto;
+    width: 50%;
+    margin: 50px auto;
+    position: relative;
+    top: 15%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#icons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-button {
+  margin: 10px;
+  border: 2px solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+#cash-button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#card-button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-button i {
+  margin: 10px;
+  font-size: 3rem;
+}
+
+#card-section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+input, select {
+  background-color: #EDF1D6;
+  color: #3d413b;
+  font-weight: 600;
+  border: 1px solid #EDF1D6;
+  border-radius: 3px;
+}
+
+::placeholder {
+  color: #3d413b;
+}
+
+option {
+  color: #3d413b;
+}
+
+#ccv {
+  width: 48px;
+}
+
+.input-field {
+  margin: 10px;
+}

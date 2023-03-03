@@ -17,45 +17,101 @@
   <header>
     <div id="logo">
       <a href="./LandingPage.html">
-      <i class='bx bxs-tree'></i>
-    </a>
+        <i class='bx bxs-tree'></i>
+      </a>
     </div>
   </header>
-<main>
-  <div id="TheCartGreyBox">
-    <div id="CartSection">
-      <div>
-        <p>Items</p>
+  <main>
+    <div id="TheCartGreyBox">
+      <div id="CartSection">
+        <div>
+          <p>Items</p>
+        </div>
+        <div>
+          <p>Category</p>
+        </div>
+        <div>
+          <p>Price</p>
+        </div>
       </div>
-      <div>
-        <p>Category</p>
-      </div>
-      <div>
-        <p>Price</p>
+      <div id="cart">
+        <div id="CartItemsList">
+          <div id="name-div"></div>
+          <div id="qty-div"></div>
+          <div id="price-div"></div>
+        </div>
+        <div id="CartPrice">
+          <div id="checkout-box">
+            <p id="subtotal"></p>
+            <p id="sales-tax"></p>
+            <p id="total"></p>
+          </div>
+
+        </div>
+        <div class="btnContainer"></div>
+        <button id="cartSubmit">Checkout</button>
       </div>
     </div>
-    <div id="cart">
-    <div id="CartItemsList">
-      <div id="name-div"></div>
-      <div id="qty-div"></div>
-      <div id="price-div"></div>
-    </div>
-    <div id="CartPrice">
-      <div id="checkout-box">
-        <p id="subtotal"></p>
-        <p id="sales-tax"></p>
-        <p id="total"></p>
+    <div class="payment-box">
+      <div id="icons-container">
+        <div class="payment-button">
+          <button id="cash-button">
+            <i class='bx bx-credit-card'></i>
+          </button>
+        </div>
+        <div class="payment-button">
+          <button id="card-button">
+            <i class='bx bx-wallet'></i>
+          </button>
+        </div>
       </div>
-
+      <div id="card-section">
+        <form action="">
+          <div id="card-num-container" class="input-field">
+            <label for="ccn">Card Number: </label>
+            <input id="ccn" name="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+              maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+          </div>
+          <div id="exp-ccv-container" class="input-field">
+            <label for="epiration-date">Exp:</label>
+            <select name='expireMM' id='expireMM'>
+              <option value=''>Month</option>
+              <option value='01'>January</option>
+              <option value='02'>February</option>
+              <option value='03'>March</option>
+              <option value='04'>April</option>
+              <option value='05'>May</option>
+              <option value='06'>June</option>
+              <option value='07'>July</option>
+              <option value='08'>August</option>
+              <option value='09'>September</option>
+              <option value='10'>October</option>
+              <option value='11'>November</option>
+              <option value='12'>December</option>
+            </select>
+            <select name='expireYY' id='expireYY'>
+              <option value=''>Year</option>
+              <option value='23'>2023</option>
+              <option value='24'>2024</option>
+              <option value='25'>2025</option>
+              <option value='26'>2026</option>
+              <option value='27'>2027</option>
+              <option value='28'>2028</option>
+              <option value='29'>2029</option>
+              <option value='30'>2030</option>
+            </select>
+            <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
+            <label for="ccv">CCV: </label>
+            <input id="ccv" name="ccv" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+              maxlength="3" placeholder="xxx">
+          </div>
+        </form>
+      </div>
+      <div id="cash-section"></div>
     </div>
-    <div class="btnContainer"></div>
-    <button id="cartSubmit">Checkout</button>
-  </div>
-  </div>
 
 
-
-</main>
+  </main>
 </body>
 <!--  <script src="./LandingPage.js"></script> -->
 <script src="./test.js"></script>
