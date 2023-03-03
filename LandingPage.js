@@ -1,4 +1,5 @@
 (function () {
+  
   const header = document.getElementById("nav-bar");
   const btns = header.getElementsByClassName("filterBtn");
   for (let i = 0; i < btns.length; i++) {
@@ -6,8 +7,67 @@
       const current = document.getElementsByClassName("active");
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
+      
     });
   }
+
+ const pointys = document.getElementsByName("pointy");
+ const flowers = document.getElementsByName("flower");
+ const trees = document.getElementsByName("tree");
+  const allBtn = document.getElementById("allBtn");
+  const treeBtn = document.getElementById("treesBtn");
+  const flowerBtn = document.getElementById("flowerBtn");
+  const pointyBtn = document.getElementById("pointyBtn");
+
+  for (const pointy of pointys) {
+    allBtn.addEventListener("click", (event) => {
+      pointy.parentNode.style.display = "block"
+    })
+    treeBtn.addEventListener("click", (event) => {
+      pointy.parentNode.style.display = "none"
+    })
+    flowerBtn.addEventListener("click", (event) => {
+      pointy.parentNode.style.display = "none"
+    })
+    pointyBtn.addEventListener("click", (event) => {
+      pointy.parentNode.style.display = "block"
+    })
+    
+  }
+
+  for (const flower of flowers) {
+    allBtn.addEventListener("click", (event) => {
+      flower.parentNode.style.display = "block"
+    })
+    treeBtn.addEventListener("click", (event) => {
+      flower.parentNode.style.display = "none"
+    })
+    flowerBtn.addEventListener("click", (event) => {
+      flower.parentNode.style.display = "block"
+    })
+    pointyBtn.addEventListener("click", (event) => {
+      flower.parentNode.style.display = "none"
+    })
+    
+  }
+
+  for (const tree of trees) {
+    allBtn.addEventListener("click", (event) => {
+      tree.parentNode.style.display = "block"
+    })
+    treeBtn.addEventListener("click", (event) => {
+      tree.parentNode.style.display = "block"
+    })
+    flowerBtn.addEventListener("click", (event) => {
+      tree.parentNode.style.display = "none"
+    })
+    pointyBtn.addEventListener("click", (event) => {
+      tree.parentNode.style.display = "none"
+    })
+    
+  }
+  
+
 
   const containers = document.querySelectorAll(".imageContainer");
   const images = document.querySelectorAll(".product-image");
