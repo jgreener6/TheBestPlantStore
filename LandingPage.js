@@ -101,6 +101,10 @@
         id: addCartBtn.dataset.id,
       };
       emptyCart.push(productObject);
+
+      let cartTotal = document.getElementById("cart-total");
+      cartTotal.innerHTML = emptyCart.length;
+      cartTotal.style.display = "inline";
       // console.log(emptyCart)
 
       localStorage.setItem("emptyCart", JSON.stringify(emptyCart));

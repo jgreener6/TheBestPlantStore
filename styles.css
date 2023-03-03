@@ -4,6 +4,10 @@
   font-family: "IBM Plex Serif", serif;
 }
 
+body {
+  background-color: #609966;
+}
+
 header {
   background-color: #3d413b;
   display: flex;
@@ -12,6 +16,10 @@ header {
   align-items: center;
   padding: 10px;
   color: #EDF1D6;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+
 }
 
 #logo {
@@ -43,11 +51,13 @@ a:visited {
   font-size: 3rem;
   cursor: pointer;
   color: #EDF1D6;
+  position: relative;
 }
 
 main {
   background-color: #609966;
   height: auto;
+  padding-top: 100px;
 }
 
 #menuItems {
@@ -100,4 +110,22 @@ main {
 
 .description {
   margin-top: 20px;
+}
+
+#cart-total {
+  display: none;
+  position: absolute;
+  left: 7px;
+  top: -15px;
+  font-size: 12pt;
+  color: white;
+  background-color: transparent;
+  border-radius: 100px;
+  min-width: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#cart{
+  padding-right: 20px;
 }

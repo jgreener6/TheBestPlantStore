@@ -52,6 +52,10 @@ let subPrice = 0;
 
 
 
+
+
+
+ 
 //  for (const checkoutButton) {
 //     checkoutButton.addEventListener("click", (event) => {
 //       const paymentMethod = prompt("Would you like to pay with Cash or Card today?")

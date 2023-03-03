@@ -4,6 +4,10 @@
     font-family: "IBM Plex Serif", serif;
     color: #EDF1D6;
   }
+
+  body {
+    background-color: #609966;
+  }
   
   header {
     background-color: #3d413b;
@@ -13,6 +17,9 @@
     align-items: center;
     padding: 10px;
     color: #EDF1D6;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
   }
   
   #logo {
@@ -22,6 +29,7 @@
   main {
     background-color: #609966;
     height: 100vh;
+    padding-top: 100px;
   }
 
   #TheCartGreyBox {
