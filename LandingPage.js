@@ -35,7 +35,7 @@
 
     }
     
-    const emptyCart = [];
+    const emptyCart = {};
         
         for(const addCartBtn of addCartBtns) {
             addCartBtn.addEventListener("click", (event) => {
@@ -46,13 +46,16 @@
                     id: addCartBtn.dataset.id,
                 }
                 emptyCart.push(productObject);
+                console.log(emptyCart)
             })
              
         }
        
      
-     
-    
+        console.log(emptyCart)
+        
+        localStorage.setItem('emptyCart', JSON.stringify(emptyCart))   
+
     
     images.forEach((i) => i.addEventListener("click", imageClick))
 

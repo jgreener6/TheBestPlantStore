@@ -18,6 +18,10 @@ header {
   font-size: 3rem;
 }
 
+a:visited {
+  color: #EDF1D6;
+}
+
 .filterBtn {
   border: none;
   outline: none;
