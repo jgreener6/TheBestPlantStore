@@ -1,4 +1,4 @@
-const PromptSync = require("prompt-sync")
+//const PromptSync = require("prompt-sync")
 
  storedEmptyCart = JSON.parse(localStorage.getItem("emptyCart"))
  console.log(storedEmptyCart)
@@ -49,18 +49,26 @@ let subPrice = 0;
  total.innerText = (`Total: ${totalPrice}`)
 
 
- for (const checkoutButton) {
-    checkoutButton.addEventListener("click", (event) => {
-      const paymentMethod = prompt("Would you like to pay with Cash or Card today?")
-      if ( paymentMethod === "Cash"){
-        const cashTendered = prompt("How much Cash do you have?")
-      } else if (paymentMethod === "Card"){
-        const cardInfo = prompt("How much Cash do you have?")
-      } else (
-        console.log ("Please enter a valid payment method")
-      )
 
-      console.log(paymentMethod)
-    });
-  }
+ document.querySelector('#cartSubmit').addEventListener('click', promptMe);
+
+ function promptMe() {
+     const paymentMethods = prompt("Card or Cash");
+     alert (paymentMethods);
+ }
+
+//  for (const checkoutButton) {
+//     checkoutButton.addEventListener("click", (event) => {
+//       const paymentMethod = prompt("Would you like to pay with Cash or Card today?")
+//       if ( paymentMethod === "Cash"){
+//         const cashTendered = prompt("How much Cash do you have?")
+//       } else if (paymentMethod === "Card"){
+//         const cardInfo = prompt("How much Cash do you have?")
+//       } else (
+//         console.log ("Please enter a valid payment method")
+//       )
+
+//       console.log(paymentMethod)
+//     });
+//   }
  
