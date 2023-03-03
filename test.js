@@ -4,9 +4,9 @@
  console.log(storedEmptyCart)
 
  const cartItemsList = document.getElementById("CartItemsList")
- const nameDiv = document.getElementById("nameDiv")
- const qtyDiv = document.getElementById("qtyDiv")
- const priceDiv = document.getElementById("priceDiv")
+ const nameDiv = document.getElementById("name-div")
+ const qtyDiv = document.getElementById("qty-div")
+ const priceDiv = document.getElementById("price-div")
  const subTotal = document.getElementById("subtotal")
  const salesTax = document.getElementById("sales-tax")
  const total = document.getElementById("total")
