@@ -1,3 +1,5 @@
-const test = localStorage.getItem('emptyCart')
+const cartString = localStorage.getItem('emptyCart')
 
-console.log(test)
+const emptyCart = JSON.parse(cartString)
+
+console.log(emptyCart)
