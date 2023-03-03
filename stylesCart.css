@@ -26,7 +26,7 @@
 
   #TheCartGreyBox {
     background-color: #3d413b7e;
-    height: 50vh;
+    height: auto;
     width: 50%;
     margin: auto;
     position: relative;

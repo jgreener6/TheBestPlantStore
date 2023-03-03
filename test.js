@@ -23,7 +23,7 @@ let subPrice = 0;
     nameDiv.append(newName)
 
     const newPrice = document.createElement("p")
-    newPrice.innerText= product.price
+    newPrice.innerText= `$${product.price}`
     priceDiv.append(newPrice)
 
     const newQty = document.createElement("p")
@@ -37,16 +37,16 @@ let subPrice = 0;
 
  const taxMI = 0.06;
  const tax = subPrice * taxMI;
- /* var rounded = Math.round(tax * 10) / 10
+ var rounded = Math.round(tax * 10) / 10
  var fixed = rounded.toFixed(1)
- parseFloat(tax.toFixed(2))
- */
- const totalPrice = tax + subPrice;
+ 
+
+ const totalPrice = parseFloat(tax.toFixed(2)) + subPrice;
 
  
- subTotal.innerText = (`Subtotal: ${subPrice}`)
- salesTax.innerText = (`Tax: ${tax}`)
- total.innerText = (`Total: ${totalPrice}`)
+ subTotal.innerText = (`Subtotal: $${subPrice}`)
+ salesTax.innerText = (`Tax: $${fixed}`)
+ total.innerText = (`Total: $${totalPrice}`)
 
 
 
