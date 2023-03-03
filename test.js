@@ -50,12 +50,7 @@ let subPrice = 0;
 
 
 
- document.querySelector('#cartSubmit').addEventListener('click', promptMe);
 
- function promptMe() {
-     const paymentMethods = prompt("Card or Cash");
-     alert (paymentMethods);
- }
 
 //  for (const checkoutButton) {
 //     checkoutButton.addEventListener("click", (event) => {
