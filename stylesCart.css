@@ -193,3 +193,10 @@ option {
   font-size: 1rem;
   font-weight: 700;
 }
+
+#cash-section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

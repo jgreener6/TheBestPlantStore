@@ -50,6 +50,14 @@ let subPrice = 0;
 
 
 
+ const cashTotalContainer = document.getElementById("cash-total-container");
+ const cashAmountContainer = document.getElementById("cash-amount-container");
+ const cashPayContainer = document.getElementById("cash-pay-container");
+ const cashChangeContainer = document.getElementById("cash-change-container");
+
+const cashtotal = document.createElement("p");
+cashtotal.innerText = (`Total: $${totalPrice}`);
+cashTotalContainer.append(cashtotal);
 
 
 
