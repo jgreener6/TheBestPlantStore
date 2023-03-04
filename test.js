@@ -78,23 +78,88 @@ const cashtotal = document.createElement("p");
 cashtotal.innerText = (`Total: $${totalPrice}`);
 cashTotalContainer.append(cashtotal);
 
+// receipt box card
+
+const receiptBox = document.getElementById("receipt-box");
+const receiptDisplayCard = document.getElementById("receipt-display-card");
+const orderBoxCard = document.getElementById("order-box-card");
+const orderNumberCard = document.getElementById("order-number-card");
+const orderListCard = document.getElementById("order-list-card");
+const orderTotalCard = document.getElementById("order-total-card");
+
+const randomOrderNum = Math.floor((Math.random() * (100000 + 1)) + 700000);
+
+orderNumberCard.innerText = (`Order Number: ${randomOrderNum}`);
+
+storedEmptyCart.forEach(product => {
+  const orderList = document.createElement("p")
+  orderList.innerText= product.name
+  orderListCard.append(orderList)
+
+  const orderPrice = document.createElement("p")
+  orderPrice.innerText= `$${product.price}`
+  orderListCard.append(orderPrice)
+
+  let price = +product.price
+  
+ subPrice += price
+});
+
+const cardSubtotal = document.createElement('p');
+const cardTaxTotal = document.createElement('p');
+const cardTotal = document.createElement('p');
+
+cardSubtotal.innerText = (`Subtotal: $${subPrice}`)
+orderTotalCard.append(cardSubtotal);
+cardTaxTotal.innerText = (`Tax: $${fixed}`)
+orderTotalCard.append(cardTaxTotal);
+cardTotal.innerText = (`Total: $${totalPrice}`)
+orderTotalCard.append(cardTotal);
+
+// receipt box cash
+
+const receiptDisplayCash = document.getElementById("receipt-display-cash");
+const orderBoxCash = document.getElementById("order-box-cash");
+const orderNumberCash = document.getElementById("order-number-cash");
+const orderListCash = document.getElementById("order-list-cash");
+const orderTotalCash = document.getElementById("order-total-cash");
+const cashAmountPaid = document.getElementById("cash-amount-paid");
+const changeDue = document.getElementById("change-due");
+
+orderNumberCash.innerText = (`Order Number: ${randomOrderNum}`);
+
+storedEmptyCart.forEach(product => {
+  const orderList = document.createElement("p")
+  orderList.innerText= product.name
+  orderListCash.append(orderList)
+
+  const orderPrice = document.createElement("p")
+  orderPrice.innerText= `$${product.price}`
+  orderListCash.append(orderPrice)
+
+  let price = +product.price
+  
+ subPrice += price
+});
+
+const cashTotal = document.createElement('p');
+
+cashTotal.innerText = (`Total: $${totalPrice}`)
+orderTotalCash.append(cashTotal);
+
+const cashAmountPaidText = document.createElement('p');
+
+cashAmountPaidText.innerText = (`Amount Paid: $${totalPrice}`)
+orderTotalCash.append(cashTotal);
 
 
 
 
- 
-//  for (const checkoutButton) {
-//     checkoutButton.addEventListener("click", (event) => {
-//       const paymentMethod = prompt("Would you like to pay with Cash or Card today?")
-//       if ( paymentMethod === "Cash"){
-//         const cashTendered = prompt("How much Cash do you have?")
-//       } else if (paymentMethod === "Card"){
-//         const cardInfo = prompt("How much Cash do you have?")
-//       } else (
-//         console.log ("Please enter a valid payment method")
-//       )
 
-//       console.log(paymentMethod)
-//     });
-//   }
+
+
+
+
+
+
  

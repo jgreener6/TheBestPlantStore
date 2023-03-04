@@ -122,7 +122,7 @@
             <div id="cash-total-container"></div>
             <div id="cash-amount-container">
               <label for="cash-amount-due">Payment Amount:</label>
-              <input type="number" step="any" name="cash-amount-due">
+              <input type="number" step="any" name="cash-amount-due" id="cash-payment">
             </div>
             <div id="cash-pay-container">
               <button id="cash-submit">Confirm Payment</button>
@@ -133,7 +133,7 @@
         </div>
       </div>
       <div id="receipt-box">
-        <div id="receipt-display-card">
+        <div id="receipt-display-card" class="hidden">
           <div class="thank-you">
             <p>Thank you for your purchase!</p>
             <p>Your order has been confirmed!</p>
@@ -142,10 +142,12 @@
               </div>
               <div id="order-list-card">
               </div>
+              <div id="order-total-card">
+              </div>
             </div>
           </div>
         </div>
-        <div id="receipt-display-cash" class="hidden">
+        <div id="receipt-display-cash">
           <div class="thank-you">
             <p>Thank you for your purchase!</p>
             <p>Your order has been confirmed!</p>
@@ -153,6 +155,12 @@
               <div id="order-number-cash">
               </div>
               <div id="order-list-cash">
+              </div>
+              <div id="order-total-cash">
+              </div>
+              <div id="cash-amount-paid">
+              </div>
+              <div id="change-due">                
               </div>
             </div>
           </div>
