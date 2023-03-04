@@ -93,6 +93,7 @@
   text-align: right;
 }
 
+
 .payment-box {
   background-color: #3d413b7e;
     height: auto;
@@ -105,6 +106,16 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+.choose-payment {
+  width: 100%;
+}
+
+.choose-payment p {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
 }
 
 #icons-container {
@@ -199,4 +210,22 @@ option {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+#cash-submit {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #EDF1D6;
+  color: #3d413b;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
 }

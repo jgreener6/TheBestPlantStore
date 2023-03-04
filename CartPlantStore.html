@@ -52,83 +52,86 @@
         <button id="cartSubmit">Checkout</button>
       </div>
     </div>
-    <div class="payment-box">
-      <div id="icons-container">
-        <div class="payment-button">
-          <button id="cash-button">
-            <i class='bx bx-credit-card'></i>
-          </button>
+      <div id="payment-box" class="payment-box hidden">
+        <div class="choose-payment">
+          <p>Please choose your payment method</p>
         </div>
-        <div class="payment-button">
-          <button id="card-button">
-            <i class='bx bx-wallet'></i>
-          </button>
+        <div id="icons-container">
+          <div class="payment-button">
+            <button id="card-button">
+              <i class='bx bx-credit-card'></i>
+            </button>
+          </div>
+          <div class="payment-button">
+            <button id="cash-button">
+              <i class='bx bx-wallet'></i>
+            </button>
+          </div>
+        </div>
+        <div id="cardToggle" class="hidden">
+        <div id="card-section">
+          <form action="">
+            <div id="card-num-container" class="input-field">
+              <label for="ccn">Card Number: </label>
+              <input id="ccn" name="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+                autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+            </div>
+            <div id="exp-ccv-container" class="input-field">
+              <label for="epiration-date">Exp:</label>
+              <select name='expireMM' id='expireMM'>
+                <option value=''>Month</option>
+                <option value='01'>January</option>
+                <option value='02'>February</option>
+                <option value='03'>March</option>
+                <option value='04'>April</option>
+                <option value='05'>May</option>
+                <option value='06'>June</option>
+                <option value='07'>July</option>
+                <option value='08'>August</option>
+                <option value='09'>September</option>
+                <option value='10'>October</option>
+                <option value='11'>November</option>
+                <option value='12'>December</option>
+              </select>
+              <select name='expireYY' id='expireYY'>
+                <option value=''>Year</option>
+                <option value='23'>2023</option>
+                <option value='24'>2024</option>
+                <option value='25'>2025</option>
+                <option value='26'>2026</option>
+                <option value='27'>2027</option>
+                <option value='28'>2028</option>
+                <option value='29'>2029</option>
+                <option value='30'>2030</option>
+              </select>
+              <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
+              <label for="ccv">CCV: </label>
+              <input id="ccv" name="ccv" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="3"
+                placeholder="xxx">
+            </div>
+            <div id="card-pay-button">
+              <div class="btnContainer"></div>
+              <button id="card-submit">Confirm Payment</button>
+            </div>
+        </div>
+        </form>
+      </div>
+      <div id="cashToggle" class="hidden">
+        <div id="cash-section">
+          <form action="">
+            <div id="cash-total-container"></div>
+            <div id="cash-amount-container">
+              <label for="cash-amount-due">Payment Amount:</label>
+              <input type="number" step="any" name="cash-amount-due">
+            </div>
+            <div id="cash-pay-container">
+              <button id="cash-submit">Confirm Payment</button>
+            </div>
+            <div id="cash-change-container"></div>
+          </form>
+        </div>
         </div>
       </div>
-      <div id="card-section">
-        <form action="">
-          <div id="card-num-container" class="input-field">
-            <label for="ccn">Card Number: </label>
-            <input id="ccn" name="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
-              maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
-          </div>
-          <div id="exp-ccv-container" class="input-field">
-            <label for="epiration-date">Exp:</label>
-            <select name='expireMM' id='expireMM'>
-              <option value=''>Month</option>
-              <option value='01'>January</option>
-              <option value='02'>February</option>
-              <option value='03'>March</option>
-              <option value='04'>April</option>
-              <option value='05'>May</option>
-              <option value='06'>June</option>
-              <option value='07'>July</option>
-              <option value='08'>August</option>
-              <option value='09'>September</option>
-              <option value='10'>October</option>
-              <option value='11'>November</option>
-              <option value='12'>December</option>
-            </select>
-            <select name='expireYY' id='expireYY'>
-              <option value=''>Year</option>
-              <option value='23'>2023</option>
-              <option value='24'>2024</option>
-              <option value='25'>2025</option>
-              <option value='26'>2026</option>
-              <option value='27'>2027</option>
-              <option value='28'>2028</option>
-              <option value='29'>2029</option>
-              <option value='30'>2030</option>
-            </select>
-            <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
-            <label for="ccv">CCV: </label>
-            <input id="ccv" name="ccv" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="3"
-              placeholder="xxx">
-          </div>
-          <div id="card-pay-button">
-            <div class="btnContainer"></div>
-            <button id="card-submit">Confirm Payment</button>
-          </div>
-      </div>
-      </form>
-      <div id="cash-section">
-      <form action="">
-        <div id="cash-total-container"></div>
-        <div id="cash-amount-container">
-          <label for="cash-amount-due">Payment Amount:</label>
-          <input type="number" step="any" name="cash-amount-due">
-        </div>
-        <div id="cash-pay-container">
-          <button id="card-submit">Confirm Payment</button>
-        </div>
-        <div id="cash-change-container"></div>
-      </form>
-    </div>
-    </div>
-    
-    </div>
-
-
   </main>
 </body>
 

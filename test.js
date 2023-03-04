@@ -11,7 +11,7 @@
  const salesTax = document.getElementById("sales-tax")
  const total = document.getElementById("total")
  const cartPriceBox = document.getElementById("CartPrice")
- const checkoutButton = document.getElementById(".cartSubmit");
+ const checkoutButton = document.getElementById("cartSubmit");
 
 
 let subPrice = 0;
@@ -48,6 +48,25 @@ let subPrice = 0;
  salesTax.innerText = (`Tax: $${fixed}`)
  total.innerText = (`Total: $${totalPrice}`)
 
+
+const paymentBoxToggle = document.getElementById("payment-box");
+ checkoutButton.addEventListener("click", (event) => {
+  paymentBoxToggle.classList.remove("hidden")
+ })
+
+ const cashButton = document.getElementById("cash-button");
+ const cardButton = document.getElementById("card-button");
+ const cashToggle = document.getElementById("cashToggle")
+ const cardToggle = document.getElementById("cardToggle")
+
+ cashButton.addEventListener("click", (event) => {
+  cashToggle.classList.remove("hidden")
+  cardToggle.classList.add("hidden")
+ })
+ cardButton.addEventListener("click", (event) => {
+  cardToggle.classList.remove("hidden")
+  cashToggle.classList.add("hidden")
+ })
 
 
  const cashTotalContainer = document.getElementById("cash-total-container");
