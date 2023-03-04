@@ -133,9 +133,6 @@ storedEmptyCart.forEach((product) => {
   orderPrice.innerText = `$${product.price}`;
   orderListCard.append(orderPrice);
 
-  let price = +product.price;
-
-  subPrice += price;
 });
 
 const cardSubtotal = document.createElement("p");
@@ -169,12 +166,15 @@ storedEmptyCart.forEach((product) => {
   orderPrice.innerText = `$${product.price}`;
   orderListCash.append(orderPrice);
 
-  let price = +product.price;
-
-  subPrice += price;
 });
 
 const cashTotal = document.createElement("p");
+const cashSubtotal = document.createElement("p");
 
 cashTotal.innerText = `Total: $${totalPrice}`;
 orderTotalCash.append(cashTotal);
+
+const orderSubtotalCash = document.getElementById("order-subtotal-cash");
+
+cashSubtotal.innerText = `Subtotal: $${subPrice}`;
+orderSubtotalCash.append(cashSubtotal);
