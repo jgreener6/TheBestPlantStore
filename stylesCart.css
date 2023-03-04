@@ -229,3 +229,18 @@ option {
 .hidden {
   display: none;
 }
+
+#receipt-box {
+  background-color: #3d413b7e;
+  height: auto;
+  width: 50%;
+  margin: 50px auto;
+  position: relative;
+  top: 15%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
