@@ -4,10 +4,6 @@
   font-family: "IBM Plex Serif", serif;
 }
 
-body {
-  background-color: #609966;
-}
-
 header {
   background-color: #3d413b;
   display: flex;
@@ -19,7 +15,6 @@ header {
   position: fixed;
   width: 100vw;
   z-index: 1000;
-
 }
 
 #logo {
@@ -33,11 +28,11 @@ a:visited {
 .filterBtn {
   border: none;
   outline: none;
-  padding: 10px 16px;
+  padding: 8px;
   background-color: #3d413b;
   color: #EDF1D6;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "IBM Plex Serif", serif;
 }
 
@@ -58,6 +53,10 @@ main {
   background-color: #609966;
   height: auto;
   padding-top: 100px;
+}
+
+section {
+  padding: 20px
 }
 
 #menuItems {
@@ -128,4 +127,105 @@ main {
 
 #cart{
   padding-right: 20px;
+}
+
+@media only screen and (max-width: 556px) {
+  .filterBtn {
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: #3d413b;
+    color: #EDF1D6;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "IBM Plex Serif", serif;
+  }
+
+  .active {
+    border-bottom: 2px solid #EDF1D6;
+  }
+
+  .imageContainer {
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 677px) and (max-width: 750px) {
+
+  body {
+    background-color: #9DC08B;
+  }
+
+  main {
+    margin: auto;
+    background-color: #609966;
+    height: auto;
+    padding-top: 100px;
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .filterBtn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #3d413b;
+    color: #EDF1D6;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: "IBM Plex Serif", serif;
+  }
+
+  .imageContainer {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .active {
+    border-bottom: 2px solid #EDF1D6;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  body {
+    background-color: #9DC08B;
+  }
+
+  main {
+    margin: auto;
+    background-color: #609966;
+    height: auto;
+    padding-top: 100px;
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .filterBtn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #3d413b;
+    color: #EDF1D6;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: "IBM Plex Serif", serif;
+  }
+
+  .imageContainer {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .active {
+    border-bottom: 2px solid #EDF1D6;
+  }
 }

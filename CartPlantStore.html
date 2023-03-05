@@ -48,33 +48,33 @@
           </div>
 
         </div>
-        <div class="btnContainer"></div>
-        <button id="cartSubmit">Checkout</button>
+        <div class="btnContainer"><button id="cartSubmit">Checkout</button>
+        </div>
       </div>
     </div>
-      <div id="payment-box" class="payment-box hidden">
-        <div class="choose-payment">
-          <p>Please choose your payment method</p>
+    <div id="payment-box" class="payment-box hidden">
+      <div class="choose-payment">
+        <p>Please choose your payment method</p>
+      </div>
+      <div id="icons-container">
+        <div class="payment-button">
+          <button id="card-button">
+            <i class='bx bx-credit-card'></i>
+          </button>
         </div>
-        <div id="icons-container">
-          <div class="payment-button">
-            <button id="card-button">
-              <i class='bx bx-credit-card'></i>
-            </button>
-          </div>
-          <div class="payment-button">
-            <button id="cash-button">
-              <i class='bx bx-wallet'></i>
-            </button>
-          </div>
+        <div class="payment-button">
+          <button id="cash-button">
+            <i class='bx bx-wallet'></i>
+          </button>
         </div>
-        <div id="cardToggle" class="hidden">
+      </div>
+      <div id="cardToggle" class="hidden">
         <div id="card-section">
           <form action="" onsubmit="cardCheckOut()">
             <div id="card-num-container" class="input-field">
               <label for="ccn">Card Number: </label>
-              <input id="ccn" name="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
-                autocomplete="off" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+              <input id="ccn" name="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="off"
+                maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
             </div>
             <div id="exp-ccv-container" class="input-field">
               <label for="epiration-date">Exp:</label>
@@ -106,8 +106,7 @@
               </select>
               <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" required />
               <label for="ccv">CCV: </label>
-              <input id="ccv" name="ccv" type="tel" inputmode="numeric"  maxlength="3"
-                placeholder="xxx" required>
+              <input id="ccv" name="ccv" type="tel" inputmode="numeric" maxlength="3" placeholder="xxx" required>
             </div>
             <div id="card-pay-button">
               <div class="btnContainer"></div>
@@ -130,44 +129,44 @@
             <div id="cash-change-container"></div>
           </form>
         </div>
+      </div>
+    </div>
+    <div id="receipt-box">
+      <div id="receipt-display-card" class="hidden">
+        <div class="thank-you">
+          <p>Thank you for your purchase!</p>
+          <p>Your order has been confirmed!</p>
+          <div id="order-box-card">
+            <div id="order-number-card">
+            </div>
+            <div id="order-list-card">
+            </div>
+            <div id="order-total-card">
+            </div>
+          </div>
         </div>
       </div>
-      <div id="receipt-box">
-        <div id="receipt-display-card" class="hidden">
-          <div class="thank-you">
-            <p>Thank you for your purchase!</p>
-            <p>Your order has been confirmed!</p>
-            <div id="order-box-card">
-              <div id="order-number-card">
-              </div>
-              <div id="order-list-card">
-              </div>
-              <div id="order-total-card">
-              </div>
+      <div id="receipt-display-cash" class="hidden">
+        <div class="thank-you">
+          <p>Thank you for your purchase!</p>
+          <div id="order-box-cash">
+            <div id="order-number-cash">
+            </div>
+            <div id="order-list-cash">
+            </div>
+            <div id="order-subtotal-cash">
+            </div>
+            <div id="order-total-cash">
+            </div>
+            <div id="cash-amount-paid">
+            </div>
+            <div id="change-due">
             </div>
           </div>
         </div>
-        <div id="receipt-display-cash" class="hidden">
-          <div class="thank-you">
-            <p>Thank you for your purchase!</p>
-            <div id="order-box-cash">
-              <div id="order-number-cash">
-              </div>
-              <div id="order-list-cash">
-              </div>
-              <div id="order-subtotal-cash">
-              </div>
-              <div id="order-total-cash">
-              </div>
-              <div id="cash-amount-paid">
-              </div>
-              <div id="change-due">                
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
 
-      </div>
+    </div>
   </main>
 </body>
 
