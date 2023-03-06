@@ -1,6 +1,8 @@
 
 # Group 1: Point of Sale Project  
 
+A web app created by [Grif](https://github.com/grif-wakeman), [Sara](https://github.com/ssevans12),[Justin](https://github.com/jgreener6) and [Shelby](https://github.com/shelbysue).
+
 Creators
  1. Grif
  2. Sara
