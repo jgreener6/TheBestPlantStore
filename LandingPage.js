@@ -83,7 +83,7 @@
 
     let image = e.target;
     let container = image.parentElement;
-    container.style.height = "500px";
+    container.style.height = "450px";
     container.style.backgroundColor = "#3d413b7e";
 
     const pInfo = container.querySelector(".info-container");
