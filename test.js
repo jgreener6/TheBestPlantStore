@@ -89,12 +89,27 @@ cashCheckoutBtn.addEventListener("click", (event) => {
   const cashChangeDue = (cashPayment.value - totalPrice).toFixed(2);
   const cashChangeDueText = document.createElement("p")
   cashAmountPaid.append(cashAmountPaidText);
-  cashChangeDueText.innerText = `Change Due: $${cashChangeDue}`;
-  changeDue.append(cashChangeDueText);
+  if (cashPayment.value < totalPrice) {
+    orderListCash.classList.add("hidden");
+    orderTotalCash.classList.add("hidden");
+    orderSubtotalCash.classList.add("hidden");
+    cashAmountPaid.classList.add("hidden");
+    const thanksCash = document.getElementById("thanks-cash");
+    thanksCash.classList.add("hidden");
+    cashChangeDueText.innerText = `Stealing is bad, get out of my store.`;
+    orderBoxCash.append(cashChangeDueText);
+    orderBoxCash.style.textAlign = "center";
+    orderTotalCash.style.border = "none";
+
+  } else {
+    cashChangeDueText.innerText = `Change Due: $${cashChangeDue}`;
+    changeDue.append(cashChangeDueText);
+  }
+
 });
 
 
-function cardCheckOut(){
+function cardCheckOut() {
   paymentBoxToggle.classList.add("hidden");
   receiptDisplayCard.classList.remove("hidden");
   const cardAmountPaidText = document.createElement("p");
