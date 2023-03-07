@@ -126,12 +126,12 @@ orderNumberCard.innerText = `Order Number: ${randomOrderNum}`;
 
 storedEmptyCart.forEach((product) => {
   const orderList = document.createElement("p");
-  orderList.innerText = product.name;
+  orderList.innerText = (`${product.name} - $${product.price}`);
   orderListCard.append(orderList);
 
-  const orderPrice = document.createElement("p");
+  /* const orderPrice = document.createElement("p");
   orderPrice.innerText = `$${product.price}`;
-  orderListCard.append(orderPrice);
+  orderListCard.append(orderPrice); */
 
 });
 

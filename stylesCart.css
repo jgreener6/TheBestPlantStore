@@ -271,3 +271,60 @@ option {
   align-content: center;
 
 }
+
+#receipt-display-card {
+ padding: 20px;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you-text {
+  font-size: 1.6rem;
+} 
+.order-confirmed-text {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+#order-list-card > p {
+  font-size: 1.2rem;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#order-total-card {
+  border-top: 1px solid;
+  text-align: right;
+}
+
+
+#receipt-display-cash {
+  padding: 20px;
+ }
+ 
+ .thank-you {
+   text-align: center;
+ }
+ 
+ .thank-you-text {
+   font-size: 1.6rem;
+ } 
+ 
+ #order-list-cash > p {
+   font-size: 1.2rem;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ }
+ 
+ .order-total-cash {
+   border-top: 1px solid;
+   text-align: right;
+ }
+
+ .receipt-logo {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 3rem;
+ }
