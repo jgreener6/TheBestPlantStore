@@ -86,21 +86,13 @@ cashCheckoutBtn.addEventListener("click", (event) => {
   receiptDisplayCash.classList.remove("hidden");
   const cashAmountPaidText = document.createElement("p");
   cashAmountPaidText.innerText = `Amount Paid: $${cashPayment.value}`;
-  const cashChangeDue = cashPayment.value - totalPrice;
+  const cashChangeDue = (cashPayment.value - totalPrice).toFixed(2);
   const cashChangeDueText = document.createElement("p")
   cashAmountPaid.append(cashAmountPaidText);
   cashChangeDueText.innerText = `Change Due: $${cashChangeDue}`;
   changeDue.append(cashChangeDueText);
 });
 
-/* cardCheckoutBtn.addEventListener("click", (event) => {
-  //event.preventDefault();
-  paymentBoxToggle.classList.add("hidden");
-  receiptDisplayCard.classList.remove("hidden");
-  const cardAmountPaidText = document.createElement("p");
-  cardAmountPaidText.innerText = `Amount Paid: $${totalPrice}`;
-  orderTotalCard.append(cardAmountPaidText);
-}); */
 
 function cardCheckOut(){
   paymentBoxToggle.classList.add("hidden");
