@@ -1,5 +1,5 @@
 
-# The Best Plant Store  
+# The Best Plant Store :seedling: :potted_plant: :evergreen_tree:
 
 A web page created by [Grif](https://github.com/grif-wakeman), [Sara](https://github.com/ssevans12), [Justin](https://github.com/jgreener6), and [Shelby](https://github.com/shelbysue).
 
