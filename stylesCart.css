@@ -328,3 +328,34 @@ margin-bottom: 10px;
   padding-top: 10px;
   font-size: 3rem;
  }
+
+ @media only screen and (max-width: 768px) {
+  p {
+    font-size: 0.7rem;
+  }
+
+  .thank-you-text {
+    font-size: 1rem;
+  }
+
+  .order-confirmed-text {
+    font-size: 0.8rem;
+  }
+
+  #order-number-card {
+    font-size: 0.8rem
+  }
+  
+  #order-list-card p {
+    font-size: 0.8rem
+  }
+
+  #order-number-cash {
+    font-size: 0.8rem
+  }
+
+  #order-list-cash p {
+    font-size: 0.8rem
+  }
+
+ }
