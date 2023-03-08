@@ -26,7 +26,14 @@ This project was generated with HTML, CSS and JavaScript
 
 ## Challenges
 
+* Unforseen circumstances (schedules, power outages, etc)
+* Still learning the language
+* Working our way through bugs
+* Misunderstood the deadline
+
 ## Features We'd Like to Add 
+
+* Card validation
 
 
  
