@@ -1,7 +1,7 @@
 
 # The Best Plant Store  
 
-A web page created by [Grif](https://github.com/grif-wakeman), [Sara](https://github.com/ssevans12),[Justin](https://github.com/jgreener6), and [Shelby](https://github.com/shelbysue).
+A web page created by [Grif](https://github.com/grif-wakeman), [Sara](https://github.com/ssevans12), [Justin](https://github.com/jgreener6), and [Shelby](https://github.com/shelbysue).
 
 The Best Plant Store is a Point of Sale webpage that allows you to shop for some really cool plants, adding them to your cart, and checking out with cash or card. Features of our webpage include
 
