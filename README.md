@@ -20,6 +20,14 @@ The Best Plant Store is a Point of Sale webpage that allows you to shop for some
 ![Card input](./Assets/Credit.PNG)
 ![Receipt](./Assets/Receipt.PNG)
 
+## Technology Used
+
+This project was generated with HTML, CSS and JavaScript
+
+## Challenges
+
+## Features We'd Like to Add 
+
 
  
 
