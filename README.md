@@ -13,7 +13,7 @@ The Best Plant Store is a Point of Sale webpage that allows you to shop for some
 
 ## Screenshots
 
-![Plant Store Home Page](/homepage.png)
+![Plant Store Home Page](./Assets/homepage.PNG)
 
  
 
