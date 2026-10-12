@@ -1,0 +1,12 @@
+{
+  "name": "the-best-plant-store",
+  "version": "1.0.0",
+  "description": "A point-of-sale plant shop built with vanilla HTML, CSS and JavaScript.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

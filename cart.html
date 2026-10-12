@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart · The Best Plant Store</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="./index.html" class="logo" aria-label="The Best Plant Store home">
+        <i class="bx bxs-tree" aria-hidden="true"></i>
+        <span>The Best Plant Store</span>
+      </a>
+      <a href="./index.html" class="header-link"><i class="bx bx-left-arrow-alt" aria-hidden="true"></i> Shop</a>
+    </header>
+
+    <main class="container narrow">
+      <!-- Cart -->
+      <section id="cart-view" class="panel">
+        <h1>Your cart</h1>
+
+        <div id="empty-cart" class="empty-state" hidden>
+          <i class="bx bx-leaf" aria-hidden="true"></i>
+          <p>Your cart is empty.</p>
+          <a href="./index.html" class="btn">Browse plants</a>
+        </div>
+
+        <ul id="cart-list" class="cart-list"></ul>
+
+        <div id="cart-summary" class="cart-summary">
+          <div id="totals" class="totals"></div>
+          <button id="checkout-btn" class="btn btn-block">Checkout</button>
+        </div>
+      </section>
+
+      <!-- Payment -->
+      <section id="payment-view" class="panel" hidden>
+        <button id="back-to-cart" class="link-btn"><i class="bx bx-left-arrow-alt" aria-hidden="true"></i> Back to cart</button>
+        <h1>Payment</h1>
+        <p class="muted">Amount due: <strong id="payment-total"></strong></p>
+
+        <div class="methods" role="group" aria-label="Payment method">
+          <button class="method-btn" data-method="card" aria-pressed="false">
+            <i class="bx bx-credit-card" aria-hidden="true"></i> Card
+          </button>
+          <button class="method-btn" data-method="cash" aria-pressed="false">
+            <i class="bx bx-wallet" aria-hidden="true"></i> Cash
+          </button>
+        </div>
+
+        <form id="card-form" class="pay-form" novalidate hidden>
+          <label for="cc-number">Card number</label>
+          <input id="cc-number" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" maxlength="23" />
+
+          <div class="form-row">
+            <div>
+              <label for="exp-month">Exp. month</label>
+              <select id="exp-month" autocomplete="cc-exp-month">
+                <option value="">Month</option>
+                <option value="1">01 - Jan</option>
+                <option value="2">02 - Feb</option>
+                <option value="3">03 - Mar</option>
+                <option value="4">04 - Apr</option>
+                <option value="5">05 - May</option>
+                <option value="6">06 - Jun</option>
+                <option value="7">07 - Jul</option>
+                <option value="8">08 - Aug</option>
+                <option value="9">09 - Sep</option>
+                <option value="10">10 - Oct</option>
+                <option value="11">11 - Nov</option>
+                <option value="12">12 - Dec</option>
+              </select>
+            </div>
+            <div>
+              <label for="exp-year">Exp. year</label>
+              <select id="exp-year" autocomplete="cc-exp-year">
+                <option value="">Year</option>
+              </select>
+            </div>
+            <div>
+              <label for="cvv">CVV</label>
+              <input id="cvv" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="4" />
+            </div>
+          </div>
+
+          <p class="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-block">Confirm payment</button>
+          <p class="muted small">Demo only. Try test card 4242 4242 4242 4242.</p>
+        </form>
+
+        <form id="cash-form" class="pay-form" novalidate hidden>
+          <label for="cash-amount">Cash received</label>
+          <input id="cash-amount" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0.00" />
+          <p class="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-block">Confirm payment</button>
+        </form>
+      </section>
+
+      <!-- Receipt -->
+      <section id="receipt-view" class="panel" hidden>
+        <div id="receipt" class="receipt"></div>
+      </section>
+    </main>
+
+    <script src="./js/store.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
